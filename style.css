@@ -1,0 +1,107 @@
+/*Variáveis*/
+:root {
+  --bgSite: #d7d4ff;
+  --buttonColor: #6c63ff;
+
+  --white: #ffffff;
+  --white300: #f9f9f9;
+
+  --title: #2b2b2b;
+  --text: #555555;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
+p,
+a {
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  font-family: "Merriweather", serif;
+}
+
+.header {
+  background: var(--bgSite);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.infos {
+  flex: 1 1 400px;
+}
+.img {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+.infos h1 {
+  color: var(--title);
+  font-size: 2em;
+}
+.infos p {
+  color: var(--text);
+  line-height: 25px;
+}
+
+.infos a {
+  padding: 10px 40px;
+  background: var(--buttonColor);
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .header {
+    padding: 100px 30px 100px 30px;
+  }
+}
